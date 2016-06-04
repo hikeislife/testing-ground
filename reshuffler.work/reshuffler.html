@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>reshuffler</title>
+</head>
+<body>
+  <form id="drnda">
+    <fieldset>
+      <legend>reshuffler</legend>
+		<label for="firma">Ime firme: </label><input type="text" id="firma" name="ime_firme"><br>
+		<label for="ugovor">Broj ugovora: </label><input type="number" id="ugovor" name="ugovor" value="101" size="9"><p>
+    <hr>
+    <input type="checkbox" name="hasContract" id="hasContract" value="ugovor" checked><label for="hasContract">Ugovor</label><br>
+    <hr>
+
+	<div id="anexes"></div>
+	<hr>
+    <input type="checkbox" name="hasProp" id="hasProp" value="ponuda"><label for="hasProp">Ponuda</label><br>
+    <hr>
+
+    <input type="submit">
+    <div>Ovo prekopirati u delovodnik:<p id="delovodnik"></p></div>
+    <div>Ovo prekopirati kao ime fajla:<p id="fajl"></p></div>
+    </fieldset>
+  </form>
+  <script src="reshuffler.js"></script>
+</body>
+</html>
